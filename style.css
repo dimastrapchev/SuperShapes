@@ -1,0 +1,76 @@
+body {
+  border-left: 4px solid #000;
+  border-right: 4px solid #000;
+  position: relative;
+}
+
+body::before,
+body::after {
+  content: '';
+  width: 100%;
+  height: 8px;
+  background-color: #000;
+  position: absolute;
+  left: 0;
+  z-index: 2;
+}
+
+body::before {
+  top: 0;
+}
+
+body::after {
+  bottom: 0;
+}
+
+#tunnel circle,
+#crosses svg,
+#square_tunnel rect {
+  transform-origin: center;
+}
+
+.w-200 {
+  width: 200%;
+}
+
+.bg-yellow {
+  background-color: #ffcc10;
+}
+
+.bg-red {
+  background-color: #ff5010;
+}
+
+.bg-purple {
+  background-color: #b060c0;
+}
+
+.bg-blue {
+  background-color: #10a0c0;
+}
+
+.box {
+  box-shadow: inset 0 0 0 4px #000;
+}
+
+#conveyor_belt {
+  border-left: 4px solid #000;
+  border-right: 4px solid #000;
+}
+
+.square,
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+}
+
+h1 {
+  font-family: 'Helvetica Neue', sans;
+  font-size: 3em;
+}
+
+#square_tunnel rect {
+  transform: translate(-50%, -50%);
+  transform-box: fill-box;
+}
