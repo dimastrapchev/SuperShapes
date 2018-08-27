@@ -61,8 +61,8 @@ anime({
 
 multiplyContent(document.querySelector('#squares'), 40);
 
-const crosses = document.querySelectorAll('.square');
-crosses.forEach(cross => {
+const squares = document.querySelectorAll('.square');
+squares.forEach(cross => {
   anime({
     targets: cross,
     direction: 'alternate',
